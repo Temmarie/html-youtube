@@ -6,7 +6,6 @@
 
   display: grid;
   grid-template-columns: repeat(1fr, 14);
-
 }
 
 #main-video {
@@ -61,7 +60,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 #arrow-icon {
   border: 1px solid blue;
@@ -69,7 +68,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 #bell-icon {
   border: 1px solid blue;
@@ -77,7 +76,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 #b-sign-in {
   border: 1px solid blue;
@@ -85,7 +84,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 #logo-icon img {
@@ -176,4 +175,22 @@
 #in-search {
   display: inline-block;
   vertical-align: middle;
+}
+
+#video-likes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#author-icon {
+  width: 10%;
+}
+
+#subscribe-author {
+  width: 90%;
+}
+
+#views {
+  width: 30%;
 }
