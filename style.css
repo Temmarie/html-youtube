@@ -2,6 +2,10 @@
   grid-area: navbar;
   border: 1px solid black;
   width: auto;
+
+  display: grid;
+  grid-template-columns: repeat(1fr, 14);
+  grid-template-rows: 1fr;
 }
 
 #main-video {
@@ -25,3 +29,28 @@
   background-color: #fff;
   color: #444;
 }
+
+#menu-icon {
+  grid-column: 1 / 2;
+  border: 1px solid blue;
+}
+#logo-icon {
+  border: 1px solid blue;
+  grid-column: 2 / 5;
+}
+#in-search {
+  grid-column: 5 / 11;
+}
+#b-search {
+  grid-column: 11 / 12;
+}
+#arrow-icon {
+  grid-column: 12 / 13;
+}
+#bell-icon {
+  grid-column: 13 / 14;
+}
+#b-sign-in {
+  grid-column: 14 / 15;
+}
+
