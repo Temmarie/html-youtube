@@ -1,29 +1,27 @@
 #navbar {
-  position: relative;
-  background: blue;
-  padding-bottom: 10px;
-  text-align: center;
+  grid-area: navbar;
+  border: 1px solid black;
   width: auto;
-  max-width: 600px;
-  margin: 20px auto;
 }
 
-#main {
-  position: relative;
-  background: gray;
-  padding-bottom: 10px;
-  text-align: left;
-  width: auto;
-  max-width: 600px;
-  margin: 20px auto;
+#main-video {
+  grid-area: main;
+  border: 1px solid black;
 }
 
 #sidebar {
-  position: relative;
-  background: yellow;
-  padding-bottom: 10px;
-  text-align: right;
-  width: auto;
-  max-width: 600px;
-  margin: 20px auto;
+  grid-area: sidebar;
+  border: 1px solid black;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "navbar navbar navbar navbar navbar"
+    "main main main sidebar sidebar"
+    "footer  footer  footer footer footer";
+  background-color: #fff;
+  color: #444;
 }
