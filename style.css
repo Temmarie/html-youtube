@@ -1,0 +1,29 @@
+#navbar {
+  position: relative;
+  background: blue;
+  padding-bottom: 10px;
+  text-align: center;
+  width: auto;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#main {
+  position: relative;
+  background: gray;
+  padding-bottom: 10px;
+  text-align: left;
+  width: auto;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#sidebar {
+  position: relative;
+  background: yellow;
+  padding-bottom: 10px;
+  text-align: right;
+  width: auto;
+  max-width: 600px;
+  margin: 20px auto;
+}
