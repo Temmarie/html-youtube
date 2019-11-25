@@ -2,6 +2,7 @@
   grid-area: navbar;
   border: 1px solid black;
   width: auto;
+  height: 50px;
 
   display: grid;
   grid-template-columns: repeat(1fr, 14);
@@ -36,7 +37,7 @@
 }
 #logo-icon {
   border: 1px solid blue;
-  grid-column: 2 / 5;
+  grid-column: 2 / 4;
 }
 #in-search {
   grid-column: 5 / 11;
@@ -54,3 +55,92 @@
   grid-column: 14 / 15;
 }
 
+#logo-icon img {
+  width: 30%;
+}
+
+#magnifier {
+  font-size: 100%;
+  display: block;
+  opacity: 0.6;
+  text-indent: -10000px;
+  background-image: url("https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png");
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  box-shadow: none;
+  background-position: -28px -66px;
+  background-repeat: no-repeat;
+  border-width: medium;
+  border-style: none;
+  margin: 0px 25px;
+  padding: 0px;
+  border-color: white;
+}
+
+#arrow-icon {
+  font-size: 100%;
+  display: block;
+  opacity: 0.6;
+  text-indent: -10000px;
+  background-image: url("https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png");
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  box-shadow: none;
+  background-position: -125px -314px;
+  background-repeat: no-repeat;
+  border-width: medium;
+  border-style: none;
+  margin: 0px 25px;
+  padding: 0px;
+  border-color: white;
+}
+
+#bell-icon div {
+  width: 24px;
+  height: 24px;
+  display: block;
+  opacity: 0.6;
+}
+
+#sing-in {
+  font-size: 100%;
+  background-color: transparent;
+  border-width: 0px;
+  border-style: none;
+  margin: 0px;
+  padding: 0px;
+  border-color: white;
+}
+
+#menu-icon span {
+  font-size: 100%;
+  display: block;
+  opacity: 0.6;
+  text-indent: -10000px;
+  background-image: url("https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png");
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  box-shadow: none;
+  background-position: -198px -862px;
+  background-repeat: no-repeat;
+  border-width: medium;
+  border-style: none;
+  margin: 0px 25px;
+  padding: 0px;
+  border-color: white;
+}
+
+#in-search input {
+  width: 100%;
+  height: 30px;
+  display: flexbox;
+  vertical-align: middle;
+}
+
+#in-search {
+  display: inline-block;
+  vertical-align: middle;
+}
