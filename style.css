@@ -194,3 +194,71 @@
 #views {
   width: 30%;
 }
+
+#sharing-likes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#add {
+  width: 10%;
+}
+
+#share {
+  width: 10%;
+}
+#more {
+  width: 60%;
+}
+#like {
+  width: 10%;
+}
+
+#dislike {
+  width: 10%;
+}
+
+.same-prop {
+  font-size: 100%;
+  display: inline-block;
+  opacity: 0.6;
+  text-indent: -10000px;
+  background-image: url("https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png");
+  background-color: transparent;
+  box-shadow: none;
+  background-repeat: no-repeat;
+  border-width: medium;
+  border-style: none;
+  margin: 0px 25px;
+  padding: 0px;
+  border-color: white;
+}
+#add .icon {
+  width: 20px;
+  height: 20px;
+  background-position: -151px -725px;
+}
+
+#share .icon {
+  width: 20px;
+  height: 20px;
+  background-position: -267px -824px;
+}
+#more .icon {
+  width: 20px;
+  height: 20px;
+  background-position: -154px -860px;
+}
+#like .icon {
+  width: 20px;
+  height: 20px;
+  background-position: 0px -867px;
+}
+#dislike .icon {
+  width: 20px;
+  height: 20px;
+  background-position: -174px -804px;
+}
+
+
