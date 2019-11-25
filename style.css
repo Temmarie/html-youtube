@@ -6,7 +6,7 @@
 
   display: grid;
   grid-template-columns: repeat(1fr, 14);
-  grid-template-rows: 1fr;
+
 }
 
 #main-video {
@@ -32,31 +32,64 @@
 }
 
 #menu-icon {
-  grid-column: 1 / 2;
+  grid-column: 1 / span 1;
   border: 1px solid blue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #logo-icon {
   border: 1px solid blue;
-  grid-column: 2 / 4;
+  grid-column: 2 / span 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 #in-search {
-  grid-column: 5 / 11;
+  border: 1px solid blue;
+  grid-column: 4 / span 7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #b-search {
+  border: 1px solid blue;
   grid-column: 11 / 12;
+
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 #arrow-icon {
+  border: 1px solid blue;
   grid-column: 12 / 13;
+
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 #bell-icon {
+  border: 1px solid blue;
   grid-column: 13 / 14;
+
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 #b-sign-in {
+  border: 1px solid blue;
   grid-column: 14 / 15;
+
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 #logo-icon img {
-  width: 30%;
+  width: 50%;
 }
 
 #magnifier {
@@ -78,7 +111,7 @@
   border-color: white;
 }
 
-#arrow-icon {
+#arrow-icon div {
   font-size: 100%;
   display: block;
   opacity: 0.6;
