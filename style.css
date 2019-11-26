@@ -153,6 +153,26 @@ body {
   border-color: white;
 }
 
+#play-icon {
+  font-size: 100%;
+  display: block;
+  opacity: 0.6;
+  text-indent: -10000px;
+  background-image: url("https://archive.ph/Bss88/73e7cc59947d2ad243d63294411f83990629f7fc.png");
+  background-color: transparent;
+  width: 16px;
+  height: 12px;
+  box-shadow: none;
+  background-position: -48px -775px;
+  background-repeat: no-repeat;
+  border-width: medium;
+  border-style: none;
+  margin: 0px 0px;
+  padding: 0px;
+  border-color: white;
+  color: white;
+}
+
 #bell-icon div {
   width: 24px;
   height: 24px;
@@ -223,6 +243,26 @@ body {
   font: normal normal normal 15px/normal 'YouTube Noto', Roboto, arial, sans-serif;
   color: black;
   text-decoration: none;
+}
+
+#subscribe {
+  height: 24px;
+}
+
+#subscribe button {
+  background-color: red;
+  color: white;
+}
+
+#play-icon {
+  background-color: white;
+  
+}
+
+#subscribe > button > span {
+  font: normal normal normal 12x/normal 'YouTube Noto', Roboto, arial, sans-serif;
+  display: inline-block;
+  color: white;
 }
 
 #author{
