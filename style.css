@@ -1,7 +1,7 @@
 #navbar {
   grid-area: navbar;
   border: 1px solid black;
-  width: auto;
+  width: 1000px;
   height: 50px;
 
   display: grid;
@@ -19,7 +19,9 @@
 }
 
 .wrapper {
+  margin: auto;
   display: grid;
+  width: 1000px;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -31,7 +33,6 @@
 }
 
 .wrappers-navbar {
-  border: 1px solid blue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,16 +44,26 @@
 #logo-icon {
   grid-column: 2 / span 2;
 
-  border: 1px solid blue;
   display: flex;
   align-items: center;
   justify-content: left;
 }
 #in-search {
   grid-column: 4 / span 7;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 #b-search {
   grid-column: 11 / 12;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#b-search button {
+  height: 70%;
+  background-color: white;
 }
 #arrow-icon {
   grid-column: 12 / 13;
@@ -64,6 +75,21 @@
   grid-column: 14 / 15;
 }
 
+#b-sign-in button {
+  height: 70%;
+  background-color: rgb(22, 122, 198);
+  width: 70%;
+}
+
+#b-sign-in span {
+  font-size: 100%;
+  color: white;
+  border-width: 0px;
+  border-style: none;
+  margin: 0px;
+  padding: 0px;
+  border-color: white;
+}
 
 #logo-icon img {
   width: 50%;
@@ -232,7 +258,7 @@
   background-position: -174px -804px;
 }
 
-.up-next{
+.up-next {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
