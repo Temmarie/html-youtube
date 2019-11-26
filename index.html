@@ -1,88 +1,103 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Youtube</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="wrapper">
-    <nav id="navbar">
-        <div id="menu-icon">
-            <span></span>
-        </div>
-        <div id="logo-icon">
-            <a href="https://www.youtube.com"> <img src="img/youtube_logo.png" alt="logo"> </a>
-        </div>
-        <div id="in-search">
-            <input type="text" value="Search" placeholder="search">
-        </div>
-        <div id="b-search">
-            <button type="button"><span id="magnifier"></span></button>
-        </div>
-        <div id="arrow-icon">
-            <div></div>
-        </div>
-        <div id="bell-icon">
-                <div><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
-                        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" class="style-scope yt-icon"></path>
-                      </g></svg>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Youtube</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <div id="menu-icon" class="wrappers-navbar">
+                <span></span>
+            </div>
+            <div id="logo-icon">
+                <a href="https://www.youtube.com"> <img src="img/youtube_logo.png" alt="logo"> </a>
+            </div>
+            <div id="in-search" class="wrappers-navbar">
+                <input type="text" value="Search" placeholder="search">
+            </div>
+            <div id="b-search" class="wrappers-navbar">
+                <button type="button"><span id="magnifier"></span></button>
+            </div>
+            <div id="arrow-icon" class="wrappers-navbar">
+                <div></div>
+            </div>
+            <div id="bell-icon" class="wrappers-navbar">
+                <div><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon"
+                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g class="style-scope yt-icon">
+                            <path
+                                d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+                                class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div id="b-sign-in" class="wrappers-navbar">
+                <button type="button"><span id="sing-in">Sign in</span></button>
+            </div>
+        </nav>
+
+
+        <main id="main-video">
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZnuwB35GYMY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="video-info">
+                <h1 id="video-title">Contributing to Open Source Part I: The Easy Way</h1>
+                <div id="video-likes">
+                    <div id="author-icon">Icon
                     </div>
-        </div>
-        <div id="b-sign-in">
-            <button type="button"><span id="sing-in">Sign in</span></button>
-        </div>
-
-    </nav>
-    <main id="main-video">
-        <div id="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZnuwB35GYMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div id="video-info">
-            <h1 id="video-title">Contributing to Open Source Part I: The Easy Way</h1>
-            <div id="video-likes">
-                <div id="author-icon">Icon
-                </div>
-                <div id="subscribe-author">
+                    <div id="subscribe-author">
                         <div id="author">The Odin Project
-                            </div>
-                            <div id="subscribe">
-                                <button type="button-subscribe"><span id="play-icon"></span><span>Subscribe</span></button>
-                                <span>799</span>
-                            </div>
+                        </div>
+                        <div id="subscribe">
+                            <button type="button-subscribe"><span id="play-icon"></span><span>Subscribe</span></button>
+                            <span>799</span>
+                        </div>
+                    </div>
+                    <div id="views">45094</div>
                 </div>
-                <div id="views">45094</div>
+                <div id="sharing-likes">
+                    <div id="add">
+                        <span class="icon same-prop"></span><span>Add to</span>
+                    </div>
+                    <div id="share">
+                        <span class="icon same-prop"></span><span>Share</span>
+                    </div>
+                    <div id="more">
+                        <span class="icon same-prop"></span><span>More</span>
+                    </div>
+                    <div id="like">
+                        <span class="icon same-prop"></span><span>899</span>
+                    </div>
+                    <div id="dislike">
+                        <span class="icon same-prop"></span><span>12</span>
+                    </div>
+                </div>
             </div>
-            <div id="sharing-likes">
-                <div id="add">
-                    <span class="icon same-prop"></span><span>Add to</span>
-                </div>
-                <div id="share">
-                    <span class="icon same-prop"></span><span>Share</span>
-                </div>
-                <div id="more">
-                    <span class="icon same-prop"></span><span>More</span>                    
-                </div>
-                <div id="like">
-                    <span class="icon same-prop"></span><span>899</span>
-                </div>
-                <div id="dislike">
-                    <span class="icon same-prop"></span><span>12</span>
-                </div>
-            </div>
-        </div>
-        <div id="video-description">
+            <div id="video-description">
 
-        </div>
-    </main>
-    <aside id="sidebar">
+            </div>
+        </main>
+
+
+
+        <aside id="sidebar">
             <div>
-                    right videos
-                </div>
-    </aside>
+                right videos
+            </div>
+        </aside>
     </div>
-    </body>
+</body>
+
 </html>
