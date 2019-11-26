@@ -1,6 +1,5 @@
 #navbar {
   grid-area: navbar;
-  border: 1px solid black;
   width: 1000px;
   height: 50px;
 
@@ -40,7 +39,7 @@
 }
 
 #menu-icon {
-  width: 10%;
+  width: 5%;
 }
 #logo-icon {
   width: 10%;
@@ -50,21 +49,21 @@
 }
 
 #in-search {
-  width: 60%;
+  width: 55%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
 #b-search {
-  width: 15%;
+  width: 10%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 #b-search button {
-  height: 73%;
+  height: 58%;
   background-color: rgb(248, 248, 248);
 
   border-top-left-radius: 0px 0px;
@@ -180,14 +179,15 @@
   background-repeat: no-repeat;
   border-width: medium;
   border-style: none;
-  margin: 0px 25px;
+  margin: 0px 0px;
   padding: 0px;
   border-color: white;
 }
 
 #in-search input {
-  width: 90%;
-  height: 60%;
+  width: 95%;
+  height: 45%;
+  font-size: 16px;
 }
 
 #video-likes {
