@@ -232,4 +232,8 @@
   background-position: -174px -804px;
 }
 
-
+.up-next{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
