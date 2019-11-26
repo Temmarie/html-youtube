@@ -4,9 +4,8 @@
   width: 1000px;
   height: 50px;
 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: repeat(1fr, 14);
 }
 
 #main-video {
@@ -40,24 +39,23 @@
 }
 
 #menu-icon {
-  width: 10%;
+  grid-column: 1 / span 1;
 }
 #logo-icon {
-  width: 10%;
+  grid-column: 2 / span 1;
+
   display: flex;
   align-items: center;
   justify-content: left;
 }
-
 #in-search {
-  width: 60%;
+  grid-column: 3 / span 7;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 #b-search {
-  width: 15%;
+  grid-column: 11 / 12;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -76,13 +74,13 @@
   border-color: rgb(211, 211, 211) rgb(211, 211, 211) rgb(211, 211, 211) white;
 }
 #arrow-icon {
-  width: 5%;
+  grid-column: 12 / 13;
 }
 #bell-icon {
-  width: 5%;
+  grid-column: 13 / 14;
 }
 #b-sign-in {
-  width: 10%;
+  grid-column: 14 / 15;
 }
 
 #b-sign-in button {
@@ -108,7 +106,7 @@
 }
 
 #logo-icon img {
-  width: 100%;
+  width: 50%;
 }
 
 #magnifier {
@@ -144,7 +142,7 @@
   background-repeat: no-repeat;
   border-width: medium;
   border-style: none;
-  margin: 0px 0px;
+  margin: 0px 25px;
   padding: 0px;
   border-color: white;
 }
@@ -186,7 +184,7 @@
 }
 
 #in-search input {
-  width: 90%;
+  width: 80%;
   height: 60%;
 }
 
