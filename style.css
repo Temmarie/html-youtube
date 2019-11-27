@@ -411,13 +411,13 @@ body {
   flex-direction: row;
 }
 
-#left-side{
+#left-side {
   width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-#right-side{
+#right-side {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -427,10 +427,10 @@ body {
 .same-font-autoplay {
   font-family: "YouTube Noto", Roboto, arial, sans-serif;
   font-size: 13px;
-  
 }
 #up-next-text {
-  color: rgb( 34 , 34, 34);   
+  color: rgb(34, 34, 34);
+  font-weight: 500;
 }
 #autoplay-text {
   color: rgb(118, 118, 118);
@@ -444,23 +444,25 @@ body {
   margin-right: 7px;
 }
 
-#check-autoplay img{
+#check-autoplay img {
   width: 80%;
 }
 
-#next-autoplay{
+#next-autoplay {
   height: 30px;
-  padding: 15px;
+  padding: 10px;
   padding-right: 0px;
 }
 
+#gray-line-autoplay {
+  width: 93%;
+  border-top: 1.2px solid rgb(211, 211, 211);
+}
 
-
-
-.up-next {
+.video-suggestion {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  padding: 10px;
+  padding-top: 0px;
 }
-
-
