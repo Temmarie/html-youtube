@@ -30,7 +30,7 @@ body {
 }
 #sidebar {
   grid-area: sidebar;
-  border: 1px solid black;
+  background-color: white;
 }
 
 /*********************************** navbar **********************************/
@@ -341,7 +341,7 @@ body {
   font-family: "YouTube Noto", Roboto, arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
-  opacity: 0.5;
+  opacity: 0.8;
   height: 14px;
   margin-left: 4px;
 }
@@ -406,8 +406,61 @@ body {
 }
 
 /******************************* sidebar *****************************/
+#next-autoplay {
+  display: flex;
+  flex-direction: row;
+}
+
+#left-side{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#right-side{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.same-font-autoplay {
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+  font-size: 13px;
+  
+}
+#up-next-text {
+  color: rgb( 34 , 34, 34);   
+}
+#autoplay-text {
+  color: rgb(118, 118, 118);
+  margin-right: 7px;
+}
+
+#info-icon {
+  width: 16px;
+  height: 16px;
+  background-position: -56px -511px;
+  margin-right: 7px;
+}
+
+#check-autoplay img{
+  width: 80%;
+}
+
+#next-autoplay{
+  height: 30px;
+  padding: 15px;
+  padding-right: 0px;
+}
+
+
+
+
 .up-next {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
+
+
