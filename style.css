@@ -202,12 +202,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  border-bottom: 1.5px;
-  border-style: none none solid none;
-  border-color: white white rgb(211, 211, 211) white;
-  padding-bottom: 5px;
-}
-#view {
+  padding-bottom: 0px;
 }
 
 #view-num {
@@ -312,6 +307,18 @@ body {
 /* Views */
 #views {
   width: 30%;
+}
+
+#gray-line {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-top: 1.5px solid rgb(211, 211, 211);    
+}
+#blue-line{
+  width: 154px;
+  margin-top: -10.5px;
+  border-top: 2px solid rgb(0,113,185);
 }
 
 /* Add share and more... */
