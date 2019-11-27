@@ -8,11 +8,11 @@ body {
   display: grid;
   width: 1000px;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    "navbar navbar navbar navbar navbar"
-    "main main main sidebar sidebar"
-    "footer  footer  footer footer footer";
+    "navbar navbar navbar"
+    "main main sidebar";
+
   color: #444;
 }
 #navbar {
@@ -208,8 +208,8 @@ body {
 #view-num {
   display: block;
   position: relative;
-  bottom: 0px;
-  left: 15%;
+  top: 60%;
+  right: -20%;
   font-family: "YouTube Noto", Roboto, arial, sans-serif;
   font-size: 20px;
   font-weight: normal;
@@ -313,12 +313,13 @@ body {
   display: block;
   padding: 0;
   border: 0;
-  border-top: 1.5px solid rgb(211, 211, 211);    
+  border-top: 1.2px solid rgb(211, 211, 211);
 }
-#blue-line{
+#blue-line {
+  margin-left: 74%;
   width: 154px;
   margin-top: -10.5px;
-  border-top: 2px solid rgb(0,113,185);
+  border-top: 2px solid rgb(0, 113, 185);
 }
 
 /* Add share and more... */
