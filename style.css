@@ -34,7 +34,7 @@ body {
   border: 1px solid black;
 }
 
- /*********************************** navbar **********************************/
+/*********************************** navbar **********************************/
 .wrappers-navbar {
   display: flex;
   align-items: center;
@@ -202,6 +202,22 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  border-bottom: 1.5px;
+  border-style: none none solid none;
+  border-color: white white rgb(211, 211, 211) white;
+  padding-bottom: 5px;
+}
+#view {
+}
+
+#view-num {
+  display: block;
+  position: relative;
+  bottom: 0px;
+  left: 15%;
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
 }
 /* Avatar */
 #author-icon {
@@ -226,14 +242,19 @@ body {
   text-decoration: none;
 }
 
-
 /* Subscribe button */
 #subscribe {
   height: 24px;
-}
-#subscribe button {
+  margin-right: 0px;
   display: flex;
   flex-direction: row;
+}
+#subscribe button {
+  font: normal normal normal 14px / normal "YouTube Noto", Roboto, arial,
+    sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin-right: 0px;
   background-color: red;
   color: white;
   border-color: transparent;
@@ -243,7 +264,7 @@ body {
 }
 #back-icon-white {
   background-color: rgb(254, 254, 254);
-  margin-top: 1px;
+  margin-top: 2px;
   margin-right: 4px;
 }
 #play-icon {
@@ -268,10 +289,24 @@ body {
   background-color: red;
 }
 #subscribe > button > span {
-  font: normal normal normal 12x / normal "YouTube Noto", Roboto, arial,
+  font: normal normal normal 14px / normal "YouTube Noto", Roboto, arial,
     sans-serif;
   display: inline-block;
   color: white;
+}
+
+#subs {
+  font: normal normal normal 12px / normal "YouTube Noto", Roboto, arial,
+    sans-serif;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid solid solid none;
+  border-color: rgb(211, 211, 211) rgb(211, 211, 211) rgb(211, 211, 211) white;
+  border-top-left-radius: 0px 0px;
+  border-bottom-left-radius: 0px 0px;
+  border-top-right-radius: 2px 2px;
+  border-bottom-right-radius: 2px 2px;
+  padding: 4px 6px 0px 7px;
+  color: rgb(104, 104, 104);
 }
 
 /* Views */
@@ -347,13 +382,3 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
-
-
-
-
-
-
-
-
-
