@@ -405,6 +405,33 @@ body {
   background-position: -174px -804px;
 }
 
+#video-description{
+  width: auto;
+  background-color: white;
+  margin-top: 5px;
+  padding: 15px 15px 5px;
+
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+}
+#video-description h2{
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+#video-description p{
+  font-size: 13px;
+  color: rgb(51,51,51);
+}
+#video-description div{
+  width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgb(118,118,118);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 /******************************* sidebar *****************************/
 #next-autoplay {
   display: flex;
