@@ -452,6 +452,7 @@ body {
   height: 30px;
   padding: 10px;
   padding-right: 0px;
+  padding-bottom: 0;
 }
 
 #gray-line-autoplay {
@@ -464,5 +465,22 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 10px;
-  padding-top: 0px;
+  padding-top: 10px;
+}
+
+.vs-title-text {
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.vs-ownerviews-text {
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.video-suggestion img {
+  margin-right: 10px;
 }
