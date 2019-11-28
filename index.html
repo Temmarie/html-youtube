@@ -1,161 +1,307 @@
 <!DOCTYPE html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Youtube</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
-    <style type="text/css">@font-face {
-        font-family:Roboto;
-        font-style:italic;
-        font-weight:500;
-        src: url('http://archive.ph/Bss88/0ae24c3f861dfb8b5e6d34d180de4dae49e3d2e4.ttf') format('truetype');
-        }
-        @font-face {
-        font-family:Roboto;
-        font-style:italic;
-        font-weight:400;
-        src: url('http://archive.ph/Bss88/714188ede1667c787c99fd5b260d81bcf0ef11bd.ttf') format('truetype');
-        }
-        @font-face {
-        font-family:Roboto;
-        font-style:normal;
-        font-weight:500;
-        src: url('http://archive.ph/Bss88/49e0f3d32666ac36205f84ac7457030ca0a9d95f.ttf') format('truetype');
-        }
-        @font-face {
-        font-family:Roboto;
-        font-style:normal;
-        font-weight:400;
-        src: url('http://archive.ph/Bss88/754d9eaa4a009c42e8d6d40c632a1dad6d44ec21.ttf') format('truetype');
-        }
-        </style>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 500;
+        src: url("http://archive.ph/Bss88/0ae24c3f861dfb8b5e6d34d180de4dae49e3d2e4.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: 400;
+        src: url("http://archive.ph/Bss88/714188ede1667c787c99fd5b260d81bcf0ef11bd.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        src: url("http://archive.ph/Bss88/49e0f3d32666ac36205f84ac7457030ca0a9d95f.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        src: url("http://archive.ph/Bss88/754d9eaa4a009c42e8d6d40c632a1dad6d44ec21.ttf")
+          format("truetype");
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <nav id="navbar">
-            <div id="menu-icon" class="wrappers-navbar">
-                <span></span>
-            </div>
-            <div id="logo-icon">
-                <a href="https://www.youtube.com"> <img src="img/youtube_logo.png" alt="logo"> </a>
-            </div>
-            <div id="in-search" >
-                <input type="text" value="" placeholder="Search">
-            </div>
-            <div id="b-search" >
-                <button type="button"><span id="magnifier"></span></button>
-            </div>
-            <div id="arrow-icon" class="wrappers-navbar">
-                <div></div>
-            </div>
-            <div id="bell-icon" class="wrappers-navbar">
-                <div><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
-                        class="style-scope yt-icon"
-                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
-                        <g class="style-scope yt-icon">
-                            <path
-                                d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
-                                class="style-scope yt-icon"></path>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <div id="b-sign-in" class="wrappers-navbar">
-                <button type="button"><span id="sing-in">Sign in</span></button>
-            </div>
-        </nav>
+      <nav id="navbar">
+        <div id="menu-icon" class="wrappers-navbar">
+          <span></span>
+        </div>
+        <div id="logo-icon">
+          <a href="https://www.youtube.com">
+            <img src="img/youtube_logo.png" alt="logo" />
+          </a>
+        </div>
+        <div id="in-search">
+          <input type="text" value="" placeholder="Search" />
+        </div>
+        <div id="b-search">
+          <button type="button"><span id="magnifier"></span></button>
+        </div>
+        <div id="arrow-icon" class="wrappers-navbar">
+          <div></div>
+        </div>
+        <div id="bell-icon" class="wrappers-navbar">
+          <div>
+            <svg
+              viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet"
+              focusable="false"
+              class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 100%; height: 100%;"
+            >
+              <g class="style-scope yt-icon">
+                <path
+                  d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+                  class="style-scope yt-icon"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div id="b-sign-in" class="wrappers-navbar">
+          <button type="button"><span id="sing-in">Sign in</span></button>
+        </div>
+      </nav>
 
+      <main id="main-video">
+        <div id="video">
+          <iframe
+            width="663"
+            height="371"
+            src="https://www.youtube.com/embed/f9ip1iSAptQ"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="video-info">
+          <h1 id="video-title">What is Microverse?</h1>
+          <div id="video-likes">
+            <div id="author-icon">
+              <img
+                src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/4432929-d4c31702d08b4ffaa7be6ae75570ba5b-medium_jpg.jpg?buster=1541580997
+                        "
+                alt=""
+              />
+            </div>
+            <div id="subscribe-author">
+              <div id="author">
+                <a
+                  href="https://www.youtube.com/channel/UCTT9xjge80Ei_Gss9LSHNZw
+                            "
+                  >Microverse</a
+                >
+              </div>
+              <div id="subscribe">
+                <button>
+                  <span id="back-icon-white"><span id="play-icon"></span></span
+                  ><span>Subscribe</span>
+                </button>
+                <span id="subs">799</span>
+              </div>
+            </div>
+            <div id="views"><div id="view-num">79,094 views</div></div>
+          </div>
+          <hr class="gray-line" />
+          <hr id="blue-line" />
+          <div id="sharing-likes">
+            <div class="sharing-container" id="add">
+              <span class="icon same-prop"></span>
+              <span class="sharing-fonts">Add to</span>
+            </div>
+            <div id="share" class="sharing-container">
+              <span class="icon same-prop"></span>
+              <span class="sharing-fonts">Share</span>
+            </div>
+            <div id="more" class="sharing-container">
+              <span class="icon same-prop"></span>
+              <span class="sharing-fonts">More</span>
+            </div>
+            <div id="like" class="sharing-container">
+              <span class="icon same-prop"></span>
+              <span class="sharing-fonts">899</span>
+            </div>
+            <div id="dislike" class="sharing-container">
+              <span class="icon same-prop"></span>
+              <span class="sharing-fonts">12</span>
+            </div>
+          </div>
+        </div>
+        <div id="video-description">
+          <h2>Published on Feb 27, 2014</h2>
+          <p>
+            Microverse is a global, distributed school for software developers
+            that doesn't charge students anything until they get hired. At
+            Microverse, there are no classes or physical classrooms. Instead,
+            students learn through a very unique approach — by remote pair
+            programming and collaborating with other students in real-time, just
+            as they would with colleagues in a real company. This innovative and
+            unique approach provides our students with an accountability partner
+            and a large, global network of support. It also helps them learn
+            remote workflows and acquire the collaboration and communication
+            skills that are necessary to join a global company. Once students
+            are done with the technical curriculum, we help them improve their
+            portfolio, resume and online presence, and get ready for job
+            interviews. Then we help them find and apply to competitive jobs
+            around the world and negotiate their job offers. We have full-time
+            students in 80+ countries and graduates from Uganda to Mexico that
+            have increased their salaries by 2-10x after completing the program.
+            Learn more and start the application process.
+          </p>
+          <hr class="gray-line" />
+          <div>
+            Show More
+          </div>
+        </div>
+      </main>
 
-        <main id="main-video">
-            <div id="video">
-                <iframe width="100%" height="336" src="https://www.youtube.com/embed/f9ip1iSAptQ" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <div id="video-info">
-                <h1 id="video-title">What is Microverse?
-                </h1>
-                <div id="video-likes">
-                    <div id="author-icon">
-                        <img src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/4432929-d4c31702d08b4ffaa7be6ae75570ba5b-medium_jpg.jpg?buster=1541580997
-                        " alt="">
-                    </div>
-                    <div id="subscribe-author">
-                        <div id="author">
-                            <a href="https://www.youtube.com/channel/UCTT9xjge80Ei_Gss9LSHNZw
-                            ">Microverse</a> 
-                        </div>
-                        <div id="subscribe">
-                            <button type="button-subscribe"><span id="back-icon-white"><span id="play-icon"></span></span>Subscribe</span></button>
-                            <span id="subs">799</span>
-                        </div>
-                    </div>
-                    <div id="views"><div id="view-num">79,094 views</div></div>
-                </div>
-                <hr id="gray-line">
-                <hr id="blue-line">
-                <div id="sharing-likes">
-                    <div id="add">
-                        <span class="icon same-prop"></span><span>Add to</span>
-                    </div>
-                    <div id="share">
-                        <span class="icon same-prop"></span><span>Share</span>
-                    </div>
-                    <div id="more">
-                        <span class="icon same-prop"></span><span>More</span>
-                    </div>
-                    <div id="like">
-                        <span class="icon same-prop"></span><span>899</span>
-                    </div>
-                    <div id="dislike">
-                        <span class="icon same-prop"></span><span>12</span>
-                    </div>
-                </div>
-            </div>
-        </main>
+      <aside id="sidebar">
+        <div id="next-autoplay">
+          <div id="left-side">
+            <span id="up-next-text" class="same-font-autoplay">Up next</span>
+          </div>
+          <div id="right-side">
+            <span id="autoplay-text" class="same-font-autoplay">Autoplay</span>
+            <span id="info-icon" class="same-prop"></span>
+            <span id="check-autoplay">
+              <img src="img/autoplay-icon.png" alt="Autoplay icon" />
+            </span>
+          </div>
+        </div>
 
-
-
-        <aside id="sidebar">
-            <div class="up-next">
-                <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" alt="">
-                <span>
-                    <div>Contributing to Open Source</div>
-                    <div>The Odin Project</div>
-                    <div>89,899 views</div>
-                </span>
+        <div>
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">Contributing to Open Source</div>
+              <div class="vs-ownerviews-text">The Odin Project</div>
+              <div class="vs-ownerviews-text">89,899 views</div>
             </div>
-            <div class="up-next">
-                <img src="https://archive.ph/Bss88/495e6661840ba5e59315b8d9fbd12e8f79916207" alt="">
-                <span>
-                    <div>How to get a job</div>
-                    <div>imtiana</div>
-                    <div>8,555 views</div>
-                </span>
+          </div>
+          <hr id="gray-line-autoplay" />
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/495e6661840ba5e59315b8d9fbd12e8f79916207"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">How to get a job</div>
+              <div class="vs-ownerviews-text">imtiana</div>
+              <div class="vs-ownerviews-text">8,555 views</div>
             </div>
-            <div class="up-next">
-                <img src="https://archive.ph/Bss88/94ce5195858269ff0184aa735ee160f562dafac4" alt="">
-                <span>
-                    <div>Programming Visual Basic</div>
-                    <div>iBasskung</div>
-                    <div>1,489,899 views</div>
-                </span>
+          </div>
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/94ce5195858269ff0184aa735ee160f562dafac4"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">Programming Visual Basic</div>
+              <div class="vs-ownerviews-text">iBasskung</div>
+              <div class="vs-ownerviews-text">1,489,899 views</div>
             </div>
-            <div class="up-next">
-                <img src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802" alt="">
-                <span>
-                    <div>Contributing to Open Source</div>
-                    <div>The Odin Project</div>
-                    <div>89,899 views</div>
-                </span>
+          </div>
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">Contributing to Open Source</div>
+              <div class="vs-ownerviews-text">The Odin Project</div>
+              <div class="vs-ownerviews-text">89,899 views</div>
             </div>
-        </aside>
+          </div>
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">Contributing to Open Source</div>
+              <div class="vs-ownerviews-text">The Odin Project</div>
+              <div class="vs-ownerviews-text">89,899 views</div>
+            </div>
+          </div>
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">Contributing to Open Source</div>
+              <div class="vs-ownerviews-text">The Odin Project</div>
+              <div class="vs-ownerviews-text">89,899 views</div>
+            </div>
+          </div>
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/495e6661840ba5e59315b8d9fbd12e8f79916207"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">How to get a job</div>
+              <div class="vs-ownerviews-text">imtiana</div>
+              <div class="vs-ownerviews-text">8,555 views</div>
+            </div>
+          </div>
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/94ce5195858269ff0184aa735ee160f562dafac4"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">Programming Visual Basic</div>
+              <div class="vs-ownerviews-text">iBasskung</div>
+              <div class="vs-ownerviews-text">1,489,899 views</div>
+            </div>
+          </div>
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">Contributing to Open Source</div>
+              <div class="vs-ownerviews-text">The Odin Project</div>
+              <div class="vs-ownerviews-text">89,899 views</div>
+            </div>
+          </div>
+          <div class="video-suggestion">
+            <img
+              src="https://archive.ph/Bss88/6350ed47768d4be4388f5a8a2b530730b3520802"
+              alt=""
+            />
+            <div>
+              <div class="vs-title-text">Contributing to Open Source</div>
+              <div class="vs-ownerviews-text">The Odin Project</div>
+              <div class="vs-ownerviews-text">89,899 views</div>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
-</body>
-
+  </body>
 </html>

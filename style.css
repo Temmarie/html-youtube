@@ -27,11 +27,10 @@ body {
 }
 #main-video {
   grid-area: main;
-  border: 1px solid black;
 }
 #sidebar {
   grid-area: sidebar;
-  border: 1px solid black;
+  background-color: white;
 }
 
 /*********************************** navbar **********************************/
@@ -185,6 +184,10 @@ body {
 }
 
 /*********************************** main section **********************************/
+#video iframe {
+  border: 0;
+}
+
 #video-info {
   width: auto;
   background-color: white;
@@ -309,7 +312,7 @@ body {
   width: 30%;
 }
 
-#gray-line {
+.gray-line {
   display: block;
   padding: 0;
   border: 0;
@@ -327,7 +330,26 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  height: 30px;
 }
+
+.sharing-container {
+  display: flex;
+  flex-direction: row;
+  /* vertical-align: middle; */
+  align-items: center;
+  height: 30px;
+}
+
+.sharing-fonts {
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  opacity: 0.8;
+  height: 14px;
+  margin-left: 4px;
+}
+
 .same-prop {
   font-size: 100%;
   display: inline-block;
@@ -344,7 +366,7 @@ body {
   border-color: white;
 }
 #add {
-  width: 10%;
+  width: 13%;
 }
 #add .icon {
   width: 20px;
@@ -352,7 +374,7 @@ body {
   background-position: -151px -725px;
 }
 #share {
-  width: 10%;
+  width: 13%;
 }
 #share .icon {
   width: 20px;
@@ -369,6 +391,7 @@ body {
 }
 #like {
   width: 10%;
+  padding-left: 5px;
 }
 #like .icon {
   width: 20px;
@@ -377,6 +400,8 @@ body {
 }
 #dislike {
   width: 10%;
+  padding-left: 5px;
+  margin-right: -23px;
 }
 #dislike .icon {
   width: 20px;
@@ -384,9 +409,109 @@ body {
   background-position: -174px -804px;
 }
 
+#video-description {
+  width: auto;
+  background-color: white;
+  margin-top: 5px;
+  padding: 15px 15px 5px;
+
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+}
+#video-description h2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+#video-description p {
+  font-size: 13px;
+  color: rgb(51, 51, 51);
+}
+#video-description div {
+  width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgb(118, 118, 118);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 /******************************* sidebar *****************************/
-.up-next {
+#next-autoplay {
+  display: flex;
+  flex-direction: row;
+}
+
+#left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#right-side {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.same-font-autoplay {
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+  font-size: 13px;
+}
+#up-next-text {
+  color: rgb(34, 34, 34);
+  font-weight: 500;
+}
+#autoplay-text {
+  color: rgb(118, 118, 118);
+  margin-right: 7px;
+}
+
+#info-icon {
+  width: 16px;
+  height: 16px;
+  background-position: -56px -511px;
+  margin-right: 7px;
+}
+
+#check-autoplay img {
+  width: 80%;
+}
+
+#next-autoplay {
+  height: 30px;
+  padding: 10px;
+  padding-right: 0px;
+  padding-bottom: 0;
+}
+
+#gray-line-autoplay {
+  width: 93%;
+  border-top: 1.2px solid rgb(211, 211, 211);
+}
+
+.video-suggestion {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  padding: 10px;
+  padding-top: 10px;
+}
+
+.vs-title-text {
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.vs-ownerviews-text {
+  font-family: "YouTube Noto", Roboto, arial, sans-serif;
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.video-suggestion img {
+  margin-right: 10px;
 }
